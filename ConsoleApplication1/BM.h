@@ -10,8 +10,9 @@ public:
 	BM (const Point& p, Wave wave, size_t id);
 	BM (const BM& bm);
 
-	void setWaveValue (int value);
 	size_t getId () const;
+
+	bool operator== (const BM& op) const;
 
 	friend std::ostream& operator<< (std::ostream& out, const BM& bm);
 

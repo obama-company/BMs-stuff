@@ -1,4 +1,5 @@
 #include "Point.h"
+#include <iostream>
 
 
 Point::Point () : x_ ( 0 ), y_ ( 0 ) {}

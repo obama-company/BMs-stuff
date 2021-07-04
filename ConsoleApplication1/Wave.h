@@ -14,6 +14,8 @@ public:
 	Wave (WaveType type);
 	Wave (WaveType type, int value);
 
+	void setWaveValue (int value);
+
 	WaveType getWaveType () const;
 	int getWaveValue () const;
 
