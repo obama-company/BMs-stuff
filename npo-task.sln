@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{4862C434-141B-4CF5-9844-6E12D9C94C67}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "npo-task", "npo-task\npo-task.vcxproj", "{4862C434-141B-4CF5-9844-6E12D9C94C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,6 +12,7 @@ public:
 
 	Wave ();
 	Wave (WaveType type);
+	Wave (int type);
 	Wave (WaveType type, int value);
 
 	void setWaveValue (int value);
