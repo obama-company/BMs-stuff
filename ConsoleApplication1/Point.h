@@ -14,8 +14,11 @@ public:
 	double getX () const;
 	double getY () const;
 
+	/*double& operator[] (int i);
+	double operator[] (int i) const;*/
+
 	static Point genPoint (Random& rand);
 
-	friend std::ostream& print(std::ostream& out, const Point& p);
+	friend double distance (const Point& p1, const Point& p2);
 };
 

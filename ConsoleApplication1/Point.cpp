@@ -14,14 +14,34 @@ double Point::getX () const { return x_; }
 double Point::getY () const { return y_; }
 
 
+//double& Point::operator[](int i)
+//{
+//	if (i == 0)
+//		return x_;
+//	else if (i == 1)
+//		return y_;
+//	else
+//		throw std::out_of_range ("");
+//}
+//
+//double Point::operator[](int i) const
+//{
+//	if (i == 0)
+//		return x_;
+//	else if (i == 1)
+//		return y_;
+//	else
+//		throw std::out_of_range ("");
+//}
+
+
 Point Point::genPoint (Random& rand )
 {
 	return {rand.getDouble (), rand.getDouble ()};
 }
 
 
-std::ostream& print ( std::ostream& out, const Point& p )
+double distance (const Point& p1, const Point& p2)
 {
-	out << "(" << p.x_ << ", " << p.y_ << ")";
-	return out;
+	return (p1.x_ - p2.x_) * (p1.x_ - p2.x_) + (p1.y_ - p2.y_) * (p1.y_ - p2.y_);
 }

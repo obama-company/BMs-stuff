@@ -1,7 +1,7 @@
+#include <iomanip>
+
 #include "Battery.h"
 #include "FrequencyDistribution.h"
-
-#include <iomanip>
 
 using namespace FrequencyDistribution;
 
@@ -55,6 +55,7 @@ void Battery::makeDistribution ()
 
 		auto firstVar = findClosest (battery_, picked[0], picked);
 		auto secondVar = findClosest (battery_, picked[1], picked);
+
 		if (firstVar.second > secondVar.second)
 			picked.push_back (secondVar.first);
 		else
@@ -122,7 +123,8 @@ void Battery::makeDistribution ()
 	}
 }
 
-std::ostream& operator<<(std::ostream& out, const Battery& bat)
+
+std::ostream& operator<< (std::ostream& out, const Battery& bat)
 {
 	std::cout << std::left << std::setw (15) << "X" << std::setw (15) << "Y"
 		<< std::setw (6) << "TYPE"

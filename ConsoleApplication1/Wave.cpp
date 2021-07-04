@@ -18,13 +18,3 @@ Wave::WaveType Wave::getWaveType () const { return type_; }
 
 
 int Wave::getWaveValue () const { return value_; }
-
-
-std::ostream& print( std::ostream& out, const Wave& wave )
-{
-	out << "Type: " << (int)wave.type_;
-	if (wave.value_ != 0)
-		out << "\tValue = " << wave.value_;
-
-	return out;
-}

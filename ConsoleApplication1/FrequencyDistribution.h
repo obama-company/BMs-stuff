@@ -17,8 +17,7 @@ namespace FrequencyDistribution
 
 	inline double dist (const BM& p1, const BM& p2)
 	{
-		return (p1.getX () - p2.getX ()) * (p1.getX () - p2.getX ())
-			+ (p1.getY () - p2.getY ()) * (p1.getY () - p2.getY ());
+		return distance (p1, p2);
 	}
 
 
